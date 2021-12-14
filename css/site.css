@@ -25,3 +25,72 @@ header > a {
     text-decoration: none;
     color: crimson;
 }
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outerEllipse {
+    width: 70%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: yellow;
+    border: 4px solid black;
+    margin: auto;
+    animation: rotate 3s infinite;
+}
+
+#eyeLeft {
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    z-index: 10;
+}
+
+#eyeRight {
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    z-index: 10;
+}
+
+#cover {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    z-index: 9;
+}
+
+#mouth {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    z-index: 8;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
